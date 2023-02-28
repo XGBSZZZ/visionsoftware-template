@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWorkWindow</class>
+ <widget class="QMainWindow" name="MyWorkWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyZZZWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="picturedisplay">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>picture</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="picturedisplay_2">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Work:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpencamera"/>
+   <addaction name="actionSingle"/>
+   <addaction name="actionuseAlo"/>
+   <addaction name="actionCalib"/>
+   <addaction name="actionParameter"/>
+   <addaction name="actionUseDemo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpencamera">
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/camera.jpg</normaloff>myfile/images/camera.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Opencamera</string>
+   </property>
+   <property name="iconText">
+    <string>打开相机</string>
+   </property>
+  </action>
+  <action name="actionSingle">
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/play.jpg</normaloff>myfile/images/play.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Single</string>
+   </property>
+   <property name="iconText">
+    <string>单次测试</string>
+   </property>
+   <property name="toolTip">
+    <string>SingleGrab</string>
+   </property>
+  </action>
+  <action name="actioncontinuity">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/refresh.jpg</normaloff>myfile/images/refresh.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Continuity</string>
+   </property>
+   <property name="iconText">
+    <string>连续运行</string>
+   </property>
+   <property name="toolTip">
+    <string>ContinuityGrab</string>
+   </property>
+  </action>
+  <action name="actionCalib">
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/origin.jpg</normaloff>myfile/images/origin.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Calib</string>
+   </property>
+   <property name="iconText">
+    <string>相机标定</string>
+   </property>
+   <property name="toolTip">
+    <string>CameraCalib</string>
+   </property>
+  </action>
+  <action name="actionUseDemo">
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/forward.jpg</normaloff>myfile/images/forward.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>UseDemo</string>
+   </property>
+   <property name="iconText">
+    <string>使用例程</string>
+   </property>
+  </action>
+  <action name="actionSaveimage">
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/save.jpg</normaloff>myfile/images/save.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Saveimage</string>
+   </property>
+   <property name="iconText">
+    <string>保存图片</string>
+   </property>
+  </action>
+  <action name="actionParameter">
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/controls-alt.jpg</normaloff>myfile/images/controls-alt.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Parameter</string>
+   </property>
+   <property name="iconText">
+    <string>参数设置</string>
+   </property>
+  </action>
+  <action name="actionuseAlo">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>myfile/images/Mabe/apps.jpg</normaloff>myfile/images/Mabe/apps.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>使用算法</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

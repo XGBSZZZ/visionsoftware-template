@@ -1,7 +1,7 @@
 # myignore
-/src/.vs
+.vs
 *.json
-/src/out
+out
 
 
 # C++ objects and libs
