@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CommunicationAdd</class>
+ <widget class="QWidget" name="CommunicationAdd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加通讯</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>myfile/images/signal.jpg</normaloff>myfile/images/signal.jpg</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QPushButton" name="OK">
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>myfile/images/Mabe/arrow-right-circle.jpg</normaloff>myfile/images/Mabe/arrow-right-circle.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="GG">
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>删除</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>myfile/images/Mabe/cancel.jpg</normaloff>myfile/images/Mabe/cancel.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>名称：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="communicationName">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>请输入名称</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>通讯类型：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="communicationtype">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>TCPserver</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>myfile/images/Mabe/celluar.jpg</normaloff>myfile/images/Mabe/celluar.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TCPclient</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>myfile/images/Mabe/celluar.jpg</normaloff>myfile/images/Mabe/celluar.jpg</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UDP</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>myfile/images/Mabe/chat.jpg</normaloff>myfile/images/Mabe/chat.jpg</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
